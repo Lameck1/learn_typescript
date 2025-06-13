@@ -11,6 +11,43 @@ let myTuple: [string, number] = ["TypeScript", 3.9];
 let myObject: { name: string; age: number } = { name: "Alice", age: 30 };
 ```
 
+### Array Types
+
+```typescript
+const arr1: number[] = [1, 2, 3]; // Array of numbers
+const shoppingList: string[] = ["milk", "bread", "eggs"]; // Array of strings
+const mixedArray: (string | number)[] = ["apple", 42, "banana"]; // Array of mixed types
+const tuple: [string, number] = ["item", 1]; // Tuple with specific types
+const nestedArray: (string | number)[][] = [["apple", 1], ["banana", 2]]; // Array of arrays
+```
+
+### Any Type
+
+```typescript
+let anything: any = "This can be anything";
+anything = 42; // Now it's a number
+anything = true; // Now it's a boolean
+anything = { key: "value" }; // Now it's an object
+```
+
+### Object Types
+
+```typescript
+const person: { name: string; age: number } = { name: "John", age: 25 }; // Object with specific properties
+const product: { id: number; name: string; price: number } = {
+    id: 1,
+    name: "Laptop",
+    price: 999.99
+}; // Object with multiple properties
+const complexObject: {
+    id: number;
+    details: { description: string; inStock: boolean };
+} = {
+    id: 2,
+    details: { description: "Smartphone", inStock: true }
+}; // Object with nested properties
+```
+
 ## Type Inference
 
 ```typescript
